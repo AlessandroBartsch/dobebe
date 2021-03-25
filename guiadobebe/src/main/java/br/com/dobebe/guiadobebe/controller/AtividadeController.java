@@ -1,5 +1,7 @@
 package br.com.dobebe.guiadobebe.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -25,8 +27,9 @@ public class AtividadeController {
 	private  GrupoDePessoasRepository grupoDePessoasRepository;
 	
 	@GetMapping
-	public void listar() {
-		System.out.println("alo");
+	public List<AtividadeDto> listar() {
+		List<Atividade> atividades = atividadeRepository.findAll();
+		return AtividadeDto.converter(atividades);
 	}
 	
 	@PostMapping

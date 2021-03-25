@@ -30,18 +30,9 @@ public class Atividade {
 
 	private Boolean ativo;
 
-	public Atividade(Long id, String nomeAtividade, String descricaoAtividade, Boolean pago, Float custoPorPessoa,
-			Float custoTotal, List<GrupoDePossoa> gruposDePessoas, List<DiasFuncionamento> diasFuncionamento,
-			Boolean ativo) {
-		this.id = id;
-		this.nomeAtividade = nomeAtividade;
-		this.descricaoAtividade = descricaoAtividade;
-		this.pago = pago;
-		this.custoPorPessoa = custoPorPessoa;
-		this.custoTotal = custoTotal;
-		this.gruposDePessoas = gruposDePessoas;
-		this.diasFuncionamento = diasFuncionamento;
-		this.ativo = ativo;
+	
+	
+	public Atividade() {
 	}
 
 	public Atividade(String nomeAtividade, String descricaoAtividade, Boolean pago, Float custoPorPessoa,

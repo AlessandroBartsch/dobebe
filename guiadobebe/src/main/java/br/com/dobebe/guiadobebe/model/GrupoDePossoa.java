@@ -20,11 +20,7 @@ public class GrupoDePossoa {
 	@Enumerated(EnumType.STRING)
 	private CategoriaDePessoa categoriaDePessoa;
 
-	public GrupoDePossoa(Long id, Integer idadeMinima, Integer idadeMaxima, CategoriaDePessoa categoriaDePessoa) {
-		this.id = id;
-		this.idadeMinima = idadeMinima;
-		this.idadeMaxima = idadeMaxima;
-		this.categoriaDePessoa = categoriaDePessoa;
+	public GrupoDePossoa() {
 	}
 
 	public GrupoDePossoa(Integer idadeMinima, Integer idadeMaxima, CategoriaDePessoa categoriaDePessoa) {
